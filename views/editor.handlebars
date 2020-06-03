@@ -1,0 +1,140 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body oncopy="return false" oncut="return false" onpaste="return false">
+    <div id="questionswitch">
+        <div class="major">Major</div>
+        <div class="questiondiv"><button id="questionbutton1">Question 1</button></div>
+    </div>
+    <div id="questionswitchcompiler">
+    <div id="container1" class="clearfix1">
+        <div id="editor1"></div>
+
+        <div id="dragbar1"></div>
+
+        <div id="result">
+            <div id="toolbar">
+                <pre class="question" id="question1">{{question1}}</pre>
+                <p class="h-divider"></p>
+                <p class="toolbar-text" id="language-name1">Language</p>
+                <p id="run-button" class="toolbar-button">Run</p>
+                <p id="timer-text1" class="toolbar-text">0:0:0</p>
+                <p id="submit-button" class="toolbar-button">Submit</p>
+                <img src="images/gear_loading.gif" style="width: 30px; height: 30px; vertical-align: middle; display: none" id="loading-image">
+            </div>
+
+            <div id="output">
+                <pre id="output-text" class="output-text">Output will be shown here.</pre>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="language-select-popup" class="popup">
+        <div class="popup-content">
+            <p class="popup-title-1">Select Programming language:</p>
+            <form id="language-radio-group" action="" class="language-options">
+                <input type="radio" value="java" name="language" id="prog-java">
+                <label for="prog-java">Java</label>
+                <input type="radio" value="python" name="language" id="prog-python">
+                <label for="prog-python">Python</label>
+                <input type="radio" value="c++" name="language" id="prog-cpp">
+                <label for="prog-cpp">C++</label>
+            </form>
+            <p id="language-select-btn" class="dialog-button-primary">Select</p>
+        </div>
+    </div>
+
+    <div id="timeup-popup" class="popup">
+        <div class="popup-content">
+            <p id="timeup-popup-title" class="popup-title-1" style="text-align: center;">Time Up! Please Submit your code.</p>
+            <p id="timeup-submit-code-btn" class="dialog-button-primary">Submit</p>
+            <p id="code-submit-info" style="text-align: center; display:none;"></p>
+        </div>
+    </div>
+
+    <div id="test-details-popup" class="popup">
+        <div class="popup-content">
+            <p class="popup-title-1" style="text-align: center;">Please enter the test details below.</p>
+            <p>Enrollment Number:</p>
+            <input type="text" name="enrollmentNumber" id="enrollment-number" class="dialog-input">
+            <p id="test-id-title">Test ID:</p>
+            <input type="text" name="testId" id="test-id" class="dialog-input">
+            <p id="test-details-submit-btn" class="dialog-button-primary" style="margin-top:40px;">Submit</p>
+            <p id="test-details-info" style="text-align: center; display:none;"></p>
+        </div>
+    </div>
+
+    <div id="submit-code-popup" class="popup" style="display:none;">
+        <div class="popup-content">
+            <p class="popup-title-1" style="text-align: center;">Are you sure you want to submit the code?</p>
+            <div id="submit-code-controls" style="margin-top:40px; text-align: center;">
+                <p id="submit-code-btn" class="dialog-button-primary" style="margin-right: 20px; display:inline-block;">Submit</p>
+                <p id="submit-code-cancel-btn" class="dialog-button-primary" style="margin-left: 20px; display:inline-block;">Cancel</p>
+            </div>
+            <p id="submit-code-info" style="text-align: center; display:none;"></p>
+        </div>
+    </div>
+
+    <div id="message-board" class="message-board">
+        <div class="header">
+            <a class="message-close" href="javascript:void(0)" id="message-close">&times;</a>
+            <p class="title">Message Board</p>
+        </div>
+        <div class="messages" id="messages">
+            {{!--
+            <div class="message-item">
+                <p class="message"> This is a test</p>
+                <p class="time">12:45</p>
+                --}}
+            </div>
+            <div class="search" id="message-box">
+                <textarea type="text" placeholder="Write message..." class="text-input" id="message-text"></textarea>
+                <img src="images/send_icon.png" class="send-image" id="send-btn">
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+
+    <script>
+        var isFromEdsonet = "{{isFromEdsonet}}";
+        var timer = "{{timer}}";
+        var questionId = "{{questionId}}";
+        var userId = "{{userId}}";
+        try {
+            isFromEdsonet = Boolean(isFromEdsonet);
+            timer = Number(timer);
+        } catch (e) {
+            console.log(e);
+            questionId = "test-id";
+        }
+    </script>
+    <script src="/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/script.js" type="text/javascript"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-database.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyALcOzeGGxohGJUBL1E3-Oy4nfWtIErSTI",
+            authDomain: "online-compiler-9f542.firebaseapp.com",
+            databaseURL: "https://online-compiler-9f542.firebaseio.com",
+            projectId: "online-compiler-9f542",
+            storageBucket: "online-compiler-9f542.appspot.com",
+            messagingSenderId: "807307171105",
+            appId: "1:807307171105:web:1bab284f0976bb12795a60",
+            measurementId: "G-VLLPGVZ4J4"
+        };
+        firebase.initializeApp(config);
+    </script>
+</body>
+
+</html>

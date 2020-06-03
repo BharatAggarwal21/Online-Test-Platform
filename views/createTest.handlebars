@@ -1,0 +1,56 @@
+<!Doctype>
+<html>
+    <head>
+        <title>Create Coding Test</title>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="/createTest.js"></script>
+        <link href="/createTest.css" rel="stylesheet">
+    </head>
+    <body>
+        <p class="main-title">Create Coding Test</p>
+
+        <div class="grid-container" id="question-form">
+            <div id="inputtextboxes">
+                <input type="button" id="more_fields" class="addmore" value="Add More Questions" />
+            <div id="question-text-container" class="input-container">
+                <label class="label">Coding Question 1</label>
+                <p class="description">The question that is required to be solve by the user.</p>
+                <textarea class="text-area" id="question1"></textarea>
+                <p class="error" id="question-error"></p>
+            </div>
+            </div>
+            <div id="short-code-container" class="input-container">
+                <label class="label">Test Code</label>
+                <p class="description">This unique code will be identify the created test and will be used by the user to fetch the test details.</p>
+                <input type="text" name="shortCode" class="text-input-style" id="short-code">
+                <p class="error" id="short-code-error"></p>
+            </div>
+
+            <div id="timer-container" class="input-container">
+                <label class="label">Test Time</label>
+                <p class="description">Maximum time available to complete this test.</p>
+                <select type="text" name="shortCode" class="select-input-style" id="timer">
+                    <option value="Select">Select</option>
+                    <option value="20">20 min</option>
+                    <option value="30">30 min</option>
+                    <option value="45">45 min</option>
+                    <option value="60">60 min</option>
+                </select>
+                <p class="error" id="timer-error"></p>
+            </div>
+
+            <div id="create-code-container">
+                <button id="create-code-btn" class="primary-button">Create Test</button>
+                <div class="loader" id="loader"></div>
+                <p class="error" id="submit-error"></p>
+            </div>
+        </div>
+
+        <div class="details" id="details">
+            <p>Question created successfully.</p>
+            <p>Short Code: <span id="details-short-code" class="details-short-code">test123</span></p>
+        </div>
+    </body>
+</html>

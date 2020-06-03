@@ -1,0 +1,662 @@
+body {
+    margin: 0;
+    padding: 0;    
+    font-family: 'Quicksand', sans-serif;
+	overflow:hidden;
+}
+
+.clearfix1:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#container1 {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+.clearfix2:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#container2 {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+#container3 {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+#container4 {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+#container5 {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+#container6 {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+#container7 {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+#container8 {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+#container9 {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+#container10 {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+#output-text1{
+    font-family: monospace;
+    padding: 1rem;
+}
+#output-text2{
+    font-family: monospace;
+    padding: 1rem;
+}
+#output-text3{
+    font-family: monospace;
+    padding: 1rem;
+}
+#output-text4{
+    font-family: monospace;
+    padding: 1rem;
+}
+#output-text5{
+    font-family: monospace;
+    padding: 1rem;
+}
+#output-text6{
+    font-family: monospace;
+    padding: 1rem;
+}
+#output-text7{
+    font-family: monospace;
+    padding: 1rem;
+}
+#output-text8{
+    font-family: monospace;
+    padding: 1rem;
+}
+#output-text9{
+    font-family: monospace;
+    padding: 1rem;
+}
+#output-text10{
+    font-family: monospace;
+    padding: 1rem;
+}
+#editor1 {
+    height: 100%;
+    width:50%;
+    float: left;
+}
+#editor2 {
+    height: 100%;
+    width:50%;
+    float: left;
+}
+#editor3 {
+    height: 100%;
+    width:50%;
+    float: left;
+}
+#editor4 {
+    height: 100%;
+    width:50%;
+    float: left;
+}
+#editor5 {
+    height: 100%;
+    width:50%;
+    float: left;
+}
+#editor6 {
+    height: 100%;
+    width:50%;
+    float: left;
+}
+#editor7 {
+    height: 100%;
+    width:50%;
+    float: left;
+}
+#editor8 {
+    height: 100%;
+    width:50%;
+    float: left;
+}
+#editor9 {
+    height: 100%;
+    width:50%;
+    float: left;
+}
+#editor10 {
+    height: 100%;
+    width:50%;
+    float: left;
+}
+.major{
+    color: #FCF6F5FF;
+    height: 100%;
+    text-shadow:2px 2px 5px rgb(0, 0, 0);
+    width: 10%;
+    font-family: "Georgia";
+    padding: 1px 1px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+}
+#questionswitch{
+    width: 100%;
+    background: #990011FF;
+    display: flex;
+    border: 1px solid black;
+    padding: 2px 2px;
+    height: 7%;
+}
+.questiondiv{
+    margin-left: 2%;
+}
+#questionbutton1{
+    background: rgba(255, 255, 255, 0.753);
+    color: rgb(0, 0, 0);
+    font-family: "Arial";
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgb(0, 0, 0);
+    border: 0px solid rgba(0, 255, 255, 0.589);
+    margin-top: 5px;
+    outline: none;
+    height: 80%;
+    width: 100%;
+}
+#questionbutton2{
+    background: rgba(255, 255, 255, 0.753);
+    box-shadow: 4px 4px 5px rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: "Arial";
+    outline: none;
+    border-radius: 10px;
+    border: 0px solid rgba(0, 255, 255, 0.582);
+    margin-top: 5px;
+    height: 80%;
+    width: 100%;
+}
+#questionbutton3{
+    background: rgba(255, 255, 255, 0.753);
+    box-shadow: 4px 4px 5px rgb(0, 0, 0);
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: "Arial";
+    border-radius: 10px;
+    border: 0px solid rgba(0, 255, 255, 0.582);
+    margin-top: 5px;
+    height: 80%;
+    width: 100%;
+}
+#questionbutton4{
+    background: rgba(255, 255, 255, 0.774);
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    outline: none;
+    box-shadow: 4px 4px 5px rgb(0, 0, 0);
+    font-family: "Arial";
+    border-radius: 10px;
+    border: 0px solid rgba(0, 255, 255, 0.589);
+    margin-top: 5px;
+    height: 80%;
+    width: 100%;
+}
+#questionbutton5{
+    background: rgba(255, 255, 255, 0.74);
+    outline: none;
+    color: rgb(0, 0, 0);
+    box-shadow: 4px 4px 5px rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: "Arial";
+    border-radius: 10px;
+    border: 0px solid rgb(0, 255, 255);
+    margin-top: 5px;
+    height: 80%;
+    width: 100%;
+}
+#questionbutton6{
+    background: rgba(255, 255, 255, 0.753);
+    color: rgb(0, 0, 0);
+    font-family: "Arial";
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgb(0, 0, 0);
+    border: 0px solid rgba(0, 255, 255, 0.589);
+    margin-top: 5px;
+    outline: none;
+    height: 80%;
+    width: 100%;
+}
+#questionbutton7{
+    background: rgba(255, 255, 255, 0.753);
+    box-shadow: 4px 4px 5px rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: "Arial";
+    outline: none;
+    border-radius: 10px;
+    border: 0px solid rgba(0, 255, 255, 0.582);
+    margin-top: 5px;
+    height: 80%;
+    width: 100%;
+}
+#questionbutton8{
+    background: rgba(255, 255, 255, 0.753);
+    box-shadow: 4px 4px 5px rgb(0, 0, 0);
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: "Arial";
+    border-radius: 10px;
+    border: 0px solid rgba(0, 255, 255, 0.582);
+    margin-top: 5px;
+    height: 80%;
+    width: 100%;
+}
+#questionbutton9{
+    background: rgba(255, 255, 255, 0.774);
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    outline: none;
+    box-shadow: 4px 4px 5px rgb(0, 0, 0);
+    font-family: "Arial";
+    border-radius: 10px;
+    border: 0px solid rgba(0, 255, 255, 0.589);
+    margin-top: 5px;
+    height: 80%;
+    width: 100%;
+}
+#questionbutton10{
+    background: rgba(255, 255, 255, 0.74);
+    outline: none;
+    color: rgb(0, 0, 0);
+    box-shadow: 4px 4px 5px rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: "Arial";
+    border-radius: 10px;
+    border: 0px solid rgb(0, 255, 255);
+    margin-top: 5px;
+    height: 80%;
+    width: 100%;
+}
+#questionbutton1:hover{
+    background: rgba(255, 255, 255, 0.938);
+}
+#questionbutton2:hover{
+    background: rgba(255, 255, 255, 0.952);
+}
+#questionbutton3:hover{
+    background: rgba(255, 255, 255, 0.952);
+}
+#questionbutton4:hover{
+    background: rgba(255, 255, 255, 0.952);
+}
+#questionbutton5:hover{
+    background: rgba(255, 255, 255, 0.959);
+}
+#questionbutton6:hover{
+    background: rgba(255, 255, 255, 0.938);
+}
+#questionbutton7:hover{
+    background: rgba(255, 255, 255, 0.952);
+}
+#questionbutton8:hover{
+    background: rgba(255, 255, 255, 0.952);
+}
+#questionbutton9:hover{
+    background: rgba(255, 255, 255, 0.952);
+}
+#questionbutton10:hover{
+    background: rgba(255, 255, 255, 0.959);
+}
+#result {
+    background-color: #990011FF;
+    height: 100%;
+    width:50%;
+    float: right;
+    border-left: 2px solid black;
+}
+
+#dragbar{
+    background-color:black;
+    height:100%;
+    float: left;
+    width: 3px;
+    cursor: col-resize;
+ }
+
+ #ghostbar{
+    width:3px;
+    background-color:#000;
+    opacity:0.5;
+    position:absolute;
+    cursor: col-resize;
+    z-index:999
+}
+
+#toolbar {
+    background-color: white;
+    width:100%;
+}
+
+[class*="toolbar-"] {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.toolbar-button {
+    color: white;
+    background-color: #990011FF;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.toolbar-text {
+    margin: 0 1rem;
+}
+
+.button:hover {
+    background-color: #990011FF;
+}
+
+#output {
+	height:100%;
+    overflow-y: scroll;
+    background: black;
+}
+
+#output-text {
+ padding: 1rem;
+}
+
+#timeup-popup {
+    display: none;
+}
+
+.output-text {
+    color: white;
+    padding: 0;
+    margin: 0;
+	word-wrap: break-word;
+}
+
+.question {
+    padding: 1rem;
+    margin: 0;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.h-divider {
+    height: 0.5px;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.popup {
+    background: white;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.questionswitch{
+    height: 100vh;
+    width: 5%;
+}
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-title-1 {
+    font-size: 28px;
+}
+
+.language-options input[type="radio"] {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.language-options {
+    text-align: center;
+}
+
+.language-options label {
+    text-align: center;
+    padding-top:10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    font-size: 24px;
+    background: gray;
+    color: white;
+    box-shadow: 0px 2px 5px grey;
+    transition-duration: 1s;
+    width: 30%;
+}
+
+.language-options label:hover {
+    cursor: pointer;
+    background-color: rgb(212, 31, 52);
+}
+
+.language-options input[type="radio"]:checked+label {
+    background: #990011FF;
+    color: white;
+    box-shadow: 0px 2px 10px grey;
+}
+
+.dialog-button-primary {
+    font-size: 20px;
+    background: #990011FF;
+    color: white;
+    width: 20%;
+    text-align: center;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px grey;
+    transition-duration: 1s;
+}
+
+.dialog-button-primary:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 10px grey;
+    background-color: rgb(187, 53, 69);
+}
+
+.dialog-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 20px;
+}
+
+
+
+/*
+Message Board.
+*/
+.message-board {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    background: white;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    box-shadow: -1px 0px 10px rgba(0,0,0, 0.2);
+}
+
+.message-board .header {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 100%;
+    margin: 0;
+}
+
+.message-board .title {
+    color: black;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: left;
+    margin: 0;
+    display: inline-block;
+}
+
+.message-board .messages {
+    overflow: auto;
+    height: 100%;
+}
+
+.message-board .message-item {
+    display: block;
+    width: fit-content;
+    background-color: #EAEAEA;
+    padding: 15px;
+    margin: 0px 30px 20px 30px;
+    border-radius: 10px 10px 10px 0px;
+}
+
+.message-board .message-item .message {
+    margin: 0;
+    font-size: 20px;
+    white-space: pre-line;
+}
+
+.message-board .message-item .time {
+    margin: 0;
+    font-size: 12px;
+    margin-top: 5px;
+    opacity: 0.5;
+    text-align: left;
+    letter-spacing: 1.5;
+}
+
+.message-board .messages > *:last-child{
+    margin-bottom: 200px;
+}
+.message-board .messages > *:first-child{
+    margin-top: 40px;
+}
+
+.search {
+    background: #EBEBEB;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    width: 30%;
+    display: flex;
+}
+
+.text-input {
+    background: #EBEBEB;
+    color: #9D9D9D;
+    border: none;
+    padding: 15px;
+    padding: 15px;
+    font-size: 20px;
+    resize: none;
+    flex-grow: 1;
+    outline: none;
+    width: 30%;
+}
+
+.send-image {
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+    border-radius: 50%;
+    margin: auto 20px;
+}
+
+.send-image:hover {
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.text-input::placeholder  {
+    color: #9D9D9D;
+    opacity: 0.5;
+}
+
+.text-input:focus {
+    outline: none;
+}
+
+.text-input:disabled {
+    opacity: 0.5
+}
+
+.message-close {
+    font-size: 40px;
+    padding: 0;
+    opacity: 0.5;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+    margin-top: 0px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.message-close:hover {
+    opacity: 1;
+    cursor: pointer;
+}

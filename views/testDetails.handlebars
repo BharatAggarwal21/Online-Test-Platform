@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <title>Test Details</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="/testDetails.js"></script>
+    <link href="/testDetails.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="grid-container">
+        <div id="sidebar" class="sidebar">
+            <p class="sidebar-title">
+                <span>
+                    <strong>Details</strong>
+                </span> Board</p>
+            <input type="text" placeholder="Test Code" class="search" id="searchbar">
+            <p class="error-text" id="search-error">Press enter to continue.</p>
+
+            <div id="sidebar-content">
+
+                <div class="options-container">
+                    <div class="active" id="option-submissions">Submissions</div>
+                    <div id="option-question">Question</div>
+                </div>
+
+                <div id="sidebar-items">
+                    {{!--
+                    <div class="sidebar-item-selected sidebar-item">
+                        <p class="user-id">14103093</p>
+                    </div> --}}
+                </div>
+
+                <div id="question-details" class="question-details">
+                    <div id="questionshow">
+                    <div>
+                    <p class="title">Question 1</p>
+                    <p class="text" id="question-text">White a program to print Fibonacci series.</p>
+                    </div>
+                    </div>
+                    <p class="title">Time</p>
+                    <p class="text" id="time-text">20 mins</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="content" class="content">
+            <div class="header">
+                <div class="header-data">
+                    <div id="header-user-id">Details Board</div>
+                    <span id="language-name">Test dashboard</span>
+                </div>
+                <button id="run-button">
+                    <img src="/images/play-button.svg">
+                </button>
+                <span id="header-code" class="header-option active">Code</span>
+                <span id="header-details" class="header-option">Details</span>
+            </div>
+            <div id="questionswitchsubmission">
+                <div class="questiondivsubmission"><button id="questionbutton1">Question 1</button></div>
+            </div>
+            <div class="code-output" id="code-output">
+                <a class="close" href="javascript:void(0)" id="close-code-output">&times;</a>
+                <p class="title">Output</p>
+                <pre class="result" id="code-result"></pre>
+                <p class="error" id="compilation-error">Compilation Error</p>
+            </div>
+            <div id="editor"></div>
+            <div id="details" class="details">
+                <p class="title">Activity Timeline</p>
+                <div class="user-activity-details" id="user-activity-details">
+                    
+                </div>
+            </div>
+        </div>
+    </div>*/
+
+    <script src="/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

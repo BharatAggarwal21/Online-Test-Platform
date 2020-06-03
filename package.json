@@ -1,0 +1,39 @@
+{
+  "name": "online-compiler",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "mocha",
+    "start": "nodemon server.js",
+    "lint": "eslint --exe .js"
+  },
+  "engines": {
+    "node": "8.11.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "connect-mongo": "^2.0.1",
+    "cookie-parser": "^1.4.3",
+    "eslint": "^4.19.1",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "helmet": "^3.22.0",
+    "mongoose": "^5.9.10",
+    "morgan": "^1.10.0",
+    "nodemon": "^1.17.4",
+    "npm": "^5.10.0",
+    "uniqid": "^4.1.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "moca": "^0.4.3"
+  },
+  "main": ".eslintrc.js",
+  "directories": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
