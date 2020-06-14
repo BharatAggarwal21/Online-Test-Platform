@@ -1,11 +1,12 @@
 # Online-test-platform
+Tools and Technologies- Javascript,NodeJS,JQuery,HTML,CSS,Express,MongoDB.
 This project aims to create a online platform which can be converted into a product in near future catering to the needs of corporate and colleges alike for conducting centralised tests and evaluation various languages.
 
 The project works in the following sequence:
 
-1. Admin creates a test using a test id and sets a time limit for the test.
+1. Admin creates a test using a test id and sets a time limit for the test.The number of questions to be given in the test depends on the admin, so a while loop is used for adding questions dynamically.
 
-2. The client enters his details on his browser window and gets access to the test using the unique test id. He then gets the option to choose the language of his interest in which he will code. Once he chooses the language the test timer starts and he is directed to the editor window.
+2. The client enters his details on his browser window and gets access to the test using the unique test id. He then gets the option to choose the language of his interest in which he will code. Once he chooses the language the test timer starts and he is directed to the editor window.The editor window consists of questions fetched from the MongoDB database.
 
 3. Once inside the test window, the client can run the code that he has typed, submit it for evaluation or message the admin if he has any query. The client can not copy-paste code inside the editor as the copying and pasting permissions inside the editor have been disabled.
 
